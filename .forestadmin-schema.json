@@ -3910,10 +3910,10 @@
     }],
     "segments": [],
     "actions": [{
-      "name": "Invite user",
-      "type": "bulk",
+      "name": "Invite user by SMS",
+      "type": "single",
       "baseUrl": null,
-      "endpoint": "/forest/user/actions/invite",
+      "endpoint": "/forest/user/actions/invite-sms",
       "httpMethod": "POST",
       "redirect": null,
       "download": false,

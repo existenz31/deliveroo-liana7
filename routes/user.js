@@ -61,7 +61,7 @@ router.post('/user/actions/delete', Liana.ensureAuthenticated, async (req, res) 
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
+//const client = require('twilio')(accountSid, authToken);
 
 router.post('/user/actions/invite-sms', permissionMiddlewareCreator.smartAction(), async (req, res) => {
   const userId = req.body.data.attributes.ids[0];
